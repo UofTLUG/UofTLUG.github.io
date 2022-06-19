@@ -9,10 +9,12 @@ const Header = () => {
     { link: "/writeups", name: "Writeups" },
     { link: "/", name: "Home" },
   ];
+
+  const tux = require('../images/tux.png').default;
   return (
     <div>
       <header className="header">
-        <h1>UofTLUG <img src="https://cdn.freebiesupply.com/logos/large/2x/linux-tux-1-logo-png-transparent.png" width="30" height="30" /></h1>
+        <h1>UofTLUG <img src={tux} width="30" height="30" alt="Tux" /></h1>
         <ul className="headerMenu">
           {headerItems.map(item => (
             <li>
