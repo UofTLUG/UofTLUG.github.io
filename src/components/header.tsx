@@ -1,6 +1,5 @@
 import * as React from 'react';
 import '../styles/header-styles.css'
-import { withPrefix } from "gatsby";
 
 const Header = () => {
   const headerItems: { link: string, name: string }[] = [
@@ -12,7 +11,7 @@ const Header = () => {
   return (
     <div>
       <header className="header">
-        <h1>UofTLUG <img src={withPrefix("/img/tux.png")} width="30" height="30" alt="Tux" /></h1>
+        <h1>UofTLUG <img src={"../img/tux.png"} width="30" height="30" alt="Tux" /></h1>
         <ul className="headerMenu">
           {headerItems.map(item => (
             <li>

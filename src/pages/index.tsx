@@ -1,4 +1,3 @@
-import { withPrefix } from "gatsby";
 import * as React from "react"
 import Header from "../components/header"
 import '../styles/home-styles.css'
@@ -12,8 +11,8 @@ const IndexPage = () => {
       <Header />
       <div className="container">
         <div id="main">
-          <img src={withPrefix("/img/uoft.png")} height="120" width="120" alt="UofTLogo" />
-          <img src={withPrefix("/img/tux.png")} height="120" width="120" alt="Tux" />
+          <img src={"./img/uoft.png"} height="120" width="120" alt="UofTLogo" />
+          <img src={"./img/tux.png"} height="120" width="120" alt="Tux" />
         </div>
         <h2>Welcome to the University of Toronto Linux User Group!</h2>
         <p>GNU/Linux is a free and open source operating system that comes in many different distributions/flavours.
