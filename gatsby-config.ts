@@ -18,6 +18,12 @@ const config: GatsbyConfig = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: './static/img/uoft.png',
+      },
+    },
     `gatsby-transformer-remark`,
   ],
 }
