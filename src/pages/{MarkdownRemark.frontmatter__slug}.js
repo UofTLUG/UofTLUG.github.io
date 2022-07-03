@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
+import "../styles/writeups-styles.css"
+import Header from "../components/header"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -8,7 +10,8 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <div className="blog-post-container">
-      <div className="blog-post">
+      <Header />
+      <div className="container">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         <div
@@ -26,6 +29,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        author
+        description
         slug
         title
       }

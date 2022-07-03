@@ -13,6 +13,12 @@
 }
 
 
+.post-link {
+  display: flex;
+  flex-direction: column;
+  background-color: #444548;
+  width: 100%;
+}
 
 body {
   padding: 0;
