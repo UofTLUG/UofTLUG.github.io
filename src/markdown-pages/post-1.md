@@ -5,5 +5,4 @@ author: "Ismail Ahmed"
 description: ""
 title: "Start of UoftLUG"
 ---
-
-## Upcoming Events 
+## To be posted
