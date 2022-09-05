@@ -4,11 +4,11 @@
   border-bottom: 1px solid rgba(205, 205, 205, 0.4);
   box-sizing: border-box;
   top: 0px;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 0.2rem 1rem;
   align-items: center;
   display: flex;
   color: white;
-  background-color: #404040;
+  background:linear-gradient(45deg, #dd4814, #77216f, #5e2750, #2c001e);
   justify-content: space-between;
   font-family: monospace;
 }
@@ -29,5 +29,9 @@
   color: white;
 }
 
-
+.headerMenu li:hover {
+  text-decoration: underline !important;
+  transition-duration: 1000ms;
+  color: white;
+}
 

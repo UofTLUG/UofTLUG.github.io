@@ -11,11 +11,11 @@ const Header = () => {
   return (
     <div>
       <header className="header">
-        <h1>UofTLUG <img src={"../img/tux.png"} width="30" height="30" alt="Tux" /></h1>
+        <h1>UofTLUG</h1>
         <ul className="headerMenu">
           {headerItems.map(item => (
             <li>
-              <a href={item.link}>{item.name}</a>
+              <a  className="pageButton" href={item.link}>{item.name}</a>
             </li>
           ))}
         </ul>

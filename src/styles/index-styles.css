@@ -3,11 +3,10 @@
   height: 100vh;
   margin: 0px;
   font-family: monospace;
-  background-color: #444548;
+  background: linear-gradient(45deg, #dd4814, #77216f, #5e2750, #2c001e);
   color: white;
   border: 0;
   padding: 0 1rem 0 1rem;
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,5 +20,5 @@ body {
 
 
 #main {
-  margin-top: 60px;
+  margin-top: 5%;
 }
